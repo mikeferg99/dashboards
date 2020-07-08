@@ -7,7 +7,7 @@
     "dashboardMetadata": {
         "name": "AWS - Elastic Block Store (EBS)",
         "shared": true,
-        "owner": "michael.ferguson@dynatrace.com",
+        "owner": "",
         "sharingDetails": {
             "linkShared": true,
             "published": false
