@@ -5,9 +5,9 @@
     },
     "id": "49e1ddea-8578-4738-afaf-cdfb1a542bed",
     "dashboardMetadata": {
-        "name": "SRE - RUM w/full stack",
+        "name": "${overviewName}",
         "shared": true,
-        "owner": "michael.ferguson@dynatrace.com",
+        "owner": "",
         "sharingDetails": {
             "linkShared": true,
             "published": true
@@ -15,8 +15,8 @@
         "dashboardFilter": {
             "timeframe": "",
             "managementZone": {
-                "id": "-7554553046270161722",
-                "name": "easyTravel Customer"
+                "id": "${mz.id}",
+                "name": "${mz.name}"
             }
         }
     },
@@ -65,11 +65,11 @@
                     "aggregationRate": "SECOND"
                 }],
                 "resultMetadata": {
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|SECOND|BAR|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|SECOND|BAR|APPLICATION": {
                         "lastModified": 1587780663757,
                         "customColor": "#7cc33f"
                     },
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|SECOND|BAR|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|SECOND|BAR|APPLICATION": {
                         "lastModified": 1587780634500,
                         "customColor": "#de192f"
                     },
@@ -81,11 +81,11 @@
                         "lastModified": 1591421677237,
                         "customColor": "#ffe11c"
                     },
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|SECOND|BAR|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|SECOND|BAR|APPLICATION": {
                         "lastModified": 1590210595670,
                         "customColor": "#FFE11C"
                     },
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1587780559989,
                         "customColor": "#de192f"
                     },
@@ -93,11 +93,11 @@
                         "lastModified": 1591421656519,
                         "customColor": "#7cc33f"
                     },
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1587780523898,
                         "customColor": "#7cc33f"
                     },
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1587780543663,
                         "customColor": "#fff29a"
                     }
@@ -153,23 +153,23 @@
                         "lastModified": 1604196394727,
                         "customColor": "#ffff00"
                     },
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»truebuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|LINE|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»truebuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1587781024968,
                         "customColor": "#7c38a1"
                     },
-                    "APPLICATION-008569CDB300AE03¦APPLICATION»APPLICATION-008569CDB300AE03»truebuiltin:apps.web.visuallyComplete.load.browser|PERCENTILE|TOTAL|50|AREA|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»truebuiltin:apps.web.visuallyComplete.load.browser|PERCENTILE|TOTAL|50|AREA|APPLICATION": {
                         "lastModified": 1591421741355,
                         "customColor": "#008cdb"
                     },
-                    "APPLICATION-008569CDB300AE03¦APPLICATION»APPLICATION-008569CDB300AE03»truebuiltin:apps.web.actionDuration.xhr.browser|PERCENTILE|TOTAL|50|AREA|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»truebuiltin:apps.web.actionDuration.xhr.browser|PERCENTILE|TOTAL|50|AREA|APPLICATION": {
                         "lastModified": 1591455025940,
                         "customColor": "#7c38a1"
                     },
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»truebuiltin:apps.web.visuallyComplete.load.browser|PERCENTILE|TOTAL|50|AREA|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»truebuiltin:apps.web.visuallyComplete.load.browser|PERCENTILE|TOTAL|50|AREA|APPLICATION": {
                         "lastModified": 1587781038490,
                         "customColor": "#7c38a1"
                     },
-                    "APPLICATION-008569CDB300AE03¦APPLICATION»APPLICATION-008569CDB300AE03»truebuiltin:apps.web.actionDuration.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»truebuiltin:apps.web.actionDuration.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1591421745338,
                         "customColor": "#7c38a1"
                     },
@@ -215,11 +215,11 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "APPLICATION-008569CDB300AE03¦APPLICATION»APPLICATION-008569CDB300AE03»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
                         "lastModified": 1591422753009,
                         "customColor": "#de192f"
                     },
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»JavaScript»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Error type»JavaScript»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
                         "lastModified": 1587781384394,
                         "customColor": "#fff29a"
                     },
@@ -231,11 +231,11 @@
                         "lastModified": 1591636245568,
                         "customColor": "#ffa500"
                     },
-                    "APPLICATION-008569CDB300AE03¦APPLICATION»APPLICATION-008569CDB300AE03»true¦Error type»JavaScript»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Error type»JavaScript»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
                         "lastModified": 1591422759045,
                         "customColor": "#ef651f"
                     },
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
                         "lastModified": 1587781313178,
                         "customColor": "#de192f"
                     }
@@ -278,11 +278,11 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»truebuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|LINE|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»truebuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1587781024968,
                         "customColor": "#7c38a1"
                     },
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»truebuiltin:apps.web.visuallyComplete.load.browser|PERCENTILE|TOTAL|50|AREA|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»truebuiltin:apps.web.visuallyComplete.load.browser|PERCENTILE|TOTAL|50|AREA|APPLICATION": {
                         "lastModified": 1587781038490,
                         "customColor": "#7c38a1"
                     }
@@ -329,15 +329,15 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»JavaScript»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Error type»JavaScript»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
                         "lastModified": 1587781384394,
                         "customColor": "#fff29a"
                     },
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
                         "lastModified": 1587781313178,
                         "customColor": "#de192f"
                     },
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|LINE|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1587781287800,
                         "customColor": "#de192f"
                     }
@@ -384,15 +384,15 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»JavaScript»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Error type»JavaScript»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
                         "lastModified": 1587781384394,
                         "customColor": "#fff29a"
                     },
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
                         "lastModified": 1587781313178,
                         "customColor": "#de192f"
                     },
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|LINE|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1587781287800,
                         "customColor": "#de192f"
                     }
@@ -430,11 +430,11 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»truebuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|LINE|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»truebuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1587781024968,
                         "customColor": "#7c38a1"
                     },
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»truebuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|AREA|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»truebuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1587781038490,
                         "customColor": "#7c38a1"
                     }
@@ -476,15 +476,15 @@
                     "aggregationRate": "SECOND"
                 }],
                 "resultMetadata": {
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»JavaScript»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Error type»JavaScript»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
                         "lastModified": 1587781384394,
                         "customColor": "#fff29a"
                     },
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
                         "lastModified": 1587781313178,
                         "customColor": "#de192f"
                     },
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|LINE|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1587781287800,
                         "customColor": "#de192f"
                     }
@@ -526,15 +526,15 @@
                     "aggregationRate": "TOTAL"
                 }],
                 "resultMetadata": {
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»truebuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|LINE|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»truebuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1587781024968,
                         "customColor": "#7c38a1"
                     },
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»truebuiltin:apps.web.activeUsersEst|NONE|TOTAL|LINE|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»truebuiltin:apps.web.activeUsersEst|NONE|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1587789374342,
                         "customColor": "#008cdb"
                     },
-                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»truebuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|AREA|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»truebuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|AREA|APPLICATION": {
                         "lastModified": 1587781038490,
                         "customColor": "#7c38a1"
                     }
@@ -1091,7 +1091,7 @@
             "height": 304
         },
         "tileFilter": {},
-        "markdown": "___\n## \uD83D\uDD0D  End User\n___\n\n\n- [Transactions](#uemapplications/performanceanalysis;uemapplicationId=APPLICATION-BD398CC2DBED6B0F;visiblepart=action)\n\n- [JavaScript Errors](#uemapplications/performanceanalysis;uemapplicationId=APPLICATION-BD398CC2DBED6B0F;visiblepart=errors;a=JavascriptErrors;errortype=JAVASCRIPT;filtr3filterErrorType=JAVASCRIPT)\n\n- [HTTP Errors](#uemapplications/performanceanalysis;uemapplicationId=APPLICATION-BD398CC2DBED6B0F;visiblepart=errors;a=JavascriptErrors;errortype=HTTP;filtr3filterErrorType=HTTP)\n\n- [All Users](#usersearchoverview;demo=;filtrfilterApplication=APPLICATION-BD398CC2DBED6B0F)\n\n- [Users with Errors](#usersearchoverview;filtrfilterApplication=APPLICATION-BD398CC2DBED6B0F;filtrfilterHasError=1)\n\n- [Service Flow](#serviceflow;sci=APPLICATION-BD398CC2DBED6B0F;mode=RESPONSE_TIME)\n\n- [Geo Breakdown](#worldmap;uemapplicationId=APPLICATION-BD398CC2DBED6B0F)"
+        "markdown": "___\n## \uD83D\uDD0D  End User\n___\n\n\n- [Transactions](#uemapplications/performanceanalysis;uemapplicationId=${app.id};visiblepart=action)\n\n- [JavaScript Errors](#uemapplications/performanceanalysis;uemapplicationId=${app.id};visiblepart=errors;a=JavascriptErrors;errortype=JAVASCRIPT;filtr3filterErrorType=JAVASCRIPT)\n\n- [HTTP Errors](#uemapplications/performanceanalysis;uemapplicationId=${app.id};visiblepart=errors;a=JavascriptErrors;errortype=HTTP;filtr3filterErrorType=HTTP)\n\n- [All Users](#usersearchoverview;demo=;filtrfilterApplication=${app.id})\n\n- [Users with Errors](#usersearchoverview;filtrfilterApplication=${app.id};filtrfilterHasError=1)\n\n- [Service Flow](#serviceflow;sci=${app.id};mode=RESPONSE_TIME)\n\n- [Geo Breakdown](#worldmap;uemapplicationId=${app.id})"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
