@@ -1,0 +1,1156 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.206.40.20201030-194632"
+    },
+    "id": "49e1ddea-8578-4738-afaf-cdfb1a542bed",
+    "dashboardMetadata": {
+        "name": "SRE - RUM w/full stack",
+        "shared": true,
+        "owner": "michael.ferguson@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": true
+        },
+        "dashboardFilter": {
+            "timeframe": "",
+            "managementZone": {
+                "id": "-7554553046270161722",
+                "name": "easyTravel Customer"
+            }
+        }
+    },
+    "tiles": [{
+        "name": "Problems",
+        "tileType": "OPEN_PROBLEMS",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 228,
+            "left": 0,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "End User - Transactions by User Satisfaction per second",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:apps.web.actionCount.category",
+                    "aggregation": "NONE",
+                    "type": "BAR",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "Apdex category",
+                        "values": ["FRUSTRATED", "SATISFIED", "TOLERATING"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "SECOND"
+                }],
+                "resultMetadata": {
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|SECOND|BAR|APPLICATION": {
+                        "lastModified": 1587780663757,
+                        "customColor": "#7cc33f"
+                    },
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|SECOND|BAR|APPLICATION": {
+                        "lastModified": 1587780634500,
+                        "customColor": "#de192f"
+                    },
+                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|SECOND|BAR|APPLICATION": {
+                        "lastModified": 1591421691269,
+                        "customColor": "#de192f"
+                    },
+                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|SECOND|BAR|APPLICATION": {
+                        "lastModified": 1591421677237,
+                        "customColor": "#ffe11c"
+                    },
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|SECOND|BAR|APPLICATION": {
+                        "lastModified": 1590210595670,
+                        "customColor": "#FFE11C"
+                    },
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1587780559989,
+                        "customColor": "#de192f"
+                    },
+                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|SECOND|BAR|APPLICATION": {
+                        "lastModified": 1591421656519,
+                        "customColor": "#7cc33f"
+                    },
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1587780523898,
+                        "customColor": "#7cc33f"
+                    },
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1587780543663,
+                        "customColor": "#fff29a"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 228,
+            "left": 494,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "End User - Latency",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:apps.web.visuallyComplete.load.browser",
+                    "aggregation": "PERCENTILE",
+                    "percentile": 50,
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.web.visuallyComplete.xhr.browser",
+                    "aggregation": "PERCENTILE",
+                    "percentile": 50,
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:apps.web.visuallyComplete.xhr.browser|PERCENTILE|TOTAL|50|AREA|APPLICATION": {
+                        "lastModified": 1591502578549,
+                        "customColor": "#7c38a1"
+                    },
+                    "nullbuiltin:apps.web.activeUsersEst|NONE|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1604196394727,
+                        "customColor": "#ffff00"
+                    },
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»truebuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1587781024968,
+                        "customColor": "#7c38a1"
+                    },
+                    "APPLICATION-008569CDB300AE03¦APPLICATION»APPLICATION-008569CDB300AE03»truebuiltin:apps.web.visuallyComplete.load.browser|PERCENTILE|TOTAL|50|AREA|APPLICATION": {
+                        "lastModified": 1591421741355,
+                        "customColor": "#008cdb"
+                    },
+                    "APPLICATION-008569CDB300AE03¦APPLICATION»APPLICATION-008569CDB300AE03»truebuiltin:apps.web.actionDuration.xhr.browser|PERCENTILE|TOTAL|50|AREA|APPLICATION": {
+                        "lastModified": 1591455025940,
+                        "customColor": "#7c38a1"
+                    },
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»truebuiltin:apps.web.visuallyComplete.load.browser|PERCENTILE|TOTAL|50|AREA|APPLICATION": {
+                        "lastModified": 1587781038490,
+                        "customColor": "#7c38a1"
+                    },
+                    "APPLICATION-008569CDB300AE03¦APPLICATION»APPLICATION-008569CDB300AE03»truebuiltin:apps.web.actionDuration.xhr.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1591421745338,
+                        "customColor": "#7c38a1"
+                    },
+                    "nullbuiltin:apps.web.visuallyComplete.load.browser|PERCENTILE|TOTAL|50|AREA|APPLICATION": {
+                        "lastModified": 1604196374037,
+                        "customColor": "#008cdb"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 228,
+            "left": 988,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "End User - HTTP (Red) vs JavaScript (Orange) Errors",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:apps.web.countOfErrors",
+                    "aggregation": "NONE",
+                    "type": "BAR",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "2",
+                        "name": "Error type",
+                        "values": ["HTTP", "JavaScript"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "APPLICATION-008569CDB300AE03¦APPLICATION»APPLICATION-008569CDB300AE03»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                        "lastModified": 1591422753009,
+                        "customColor": "#de192f"
+                    },
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»JavaScript»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                        "lastModified": 1587781384394,
+                        "customColor": "#fff29a"
+                    },
+                    "null¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                        "lastModified": 1591636182952,
+                        "customColor": "#de192f"
+                    },
+                    "null¦Error type»JavaScript»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                        "lastModified": 1591636245568,
+                        "customColor": "#ffa500"
+                    },
+                    "APPLICATION-008569CDB300AE03¦APPLICATION»APPLICATION-008569CDB300AE03»true¦Error type»JavaScript»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                        "lastModified": 1591422759045,
+                        "customColor": "#ef651f"
+                    },
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                        "lastModified": 1587781313178,
+                        "customColor": "#de192f"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1140,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Page Load",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.visuallyComplete.load.browser",
+                    "aggregation": "PERCENTILE",
+                    "percentile": 50,
+                    "type": "AREA",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»truebuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1587781024968,
+                        "customColor": "#7c38a1"
+                    },
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»truebuiltin:apps.web.visuallyComplete.load.browser|PERCENTILE|TOTAL|50|AREA|APPLICATION": {
+                        "lastModified": 1587781038490,
+                        "customColor": "#7c38a1"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1482,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "HTTP Errors",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.countOfErrors",
+                    "aggregation": "NONE",
+                    "type": "BAR",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }, {
+                        "id": "2",
+                        "name": "Error type",
+                        "values": ["HTTP"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»JavaScript»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                        "lastModified": 1587781384394,
+                        "customColor": "#fff29a"
+                    },
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                        "lastModified": 1587781313178,
+                        "customColor": "#de192f"
+                    },
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1587781287800,
+                        "customColor": "#de192f"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1634,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "JavaScript Errors",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.countOfErrors",
+                    "aggregation": "NONE",
+                    "type": "BAR",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }, {
+                        "id": "2",
+                        "name": "Error type",
+                        "values": ["JavaScript"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»JavaScript»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                        "lastModified": 1587781384394,
+                        "customColor": "#fff29a"
+                    },
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                        "lastModified": 1587781313178,
+                        "customColor": "#de192f"
+                    },
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1587781287800,
+                        "customColor": "#de192f"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1292,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "XHR",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.visuallyComplete.xhr.browser",
+                    "aggregation": "PERCENTILE",
+                    "percentile": 50,
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»truebuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1587781024968,
+                        "customColor": "#7c38a1"
+                    },
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»truebuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1587781038490,
+                        "customColor": "#7c38a1"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 950,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Transactions",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.actionCount.category",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "SECOND"
+                }],
+                "resultMetadata": {
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»JavaScript»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                        "lastModified": 1587781384394,
+                        "customColor": "#fff29a"
+                    },
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|BAR|APPLICATION": {
+                        "lastModified": 1587781313178,
+                        "customColor": "#de192f"
+                    },
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»true¦Error type»HTTP»falsebuiltin:apps.web.countOfErrors|NONE|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1587781287800,
+                        "customColor": "#de192f"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 798,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Users",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.web.activeUsersEst",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.application",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»truebuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1587781024968,
+                        "customColor": "#7c38a1"
+                    },
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»truebuiltin:apps.web.activeUsersEst|NONE|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1587789374342,
+                        "customColor": "#008cdb"
+                    },
+                    "APPLICATION-FF84B13099B75A08¦APPLICATION»APPLICATION-FF84B13099B75A08»truebuiltin:apps.web.visuallyComplete.load.browser|AVG|TOTAL|AREA|APPLICATION": {
+                        "lastModified": 1587781038490,
+                        "customColor": "#7c38a1"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "\uD83D\uDEA6Health",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 342,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": " ➵  Traffic",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 874,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": " \uD83D\uDCC8  Latency",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1216,
+            "width": 228,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "\uD83D\uDEA8 Errors",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1558,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Application health",
+        "tileType": "APPLICATIONS",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 152,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "chartVisible": true
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1444,
+            "left": 0,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Host - CPU usage %",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:host.cpu.usage",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "HOST",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.host",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1140,
+            "left": 0,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Process - CPU usage",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:tech.generic.cpu.usage",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.process_group_instance",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1444,
+            "left": 494,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Host - Memory used %",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:host.mem.usage",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "HOST",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.host",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1140,
+            "left": 494,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Process - Memory",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:tech.generic.mem.workingSetSize",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.process_group_instance",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 0,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Service - Requests per second",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:service.requestCount.server",
+                    "aggregation": "NONE",
+                    "type": "BAR",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "SECOND"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 494,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Service - Latency",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:service.response.server",
+                    "aggregation": "PERCENTILE",
+                    "percentile": 50,
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 988,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Service - Errors",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:service.errors.server.count",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 494,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Database - Latency",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:service.response.time",
+                    "aggregation": "PERCENTILE",
+                    "percentile": 50,
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "SERVICE": {
+                    "SERVICE_TYPE": ["3"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 0,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Database - Queries per second",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:service.requestCount.total",
+                    "aggregation": "NONE",
+                    "type": "BAR",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "SECOND"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "SERVICE": {
+                    "SERVICE_TYPE": ["3"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 988,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Database - Errors",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:service.errors.total.count",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "SERVICE": {
+                    "SERVICE_TYPE": ["3"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1140,
+            "left": 988,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Process - Garbage Collection Suspension Time",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:tech.jvm.memory.gc.suspensionTime",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.process_group_instance",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1444,
+            "left": 988,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Host - Disk average queue length ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:host.disk.queueLength",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "HOST",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.host",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Service health",
+        "tileType": "SERVICES",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 304,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "chartVisible": true
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 1482,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "markdown": "___\n## \uD83D\uDD0D  Service\n***\n- [Transactions](/ui/diagnostictools/mda?metric=RESPONSE_TIME&dimension=%7BRequest:Name%7D&aggregation=AVERAGE&percentile=80&chart=LINE)\n\n- [Slow > 60s](ui/diagnostictools/mda?metric=RESPONSE_TIME&dimension=%7BRequest:Name%7D&aggregation=MAX&percentile=80&chart=LINE&servicefilter=0%1E0%1160000000%144611686018427387)\n\n- [5xx Errors](ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E26%112%1026%111%102%11500-599)\n\n- [4xx Errors](ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E26%112%1026%111%102%11400-499)\n\n- [Exceptions](ui/diagnostictools/mda?mdaId=exceptions&metric=EXCEPTION_COUNT&dimension=%7BException:Class%7D&mergeServices=true&aggregation=SUM&percentile=80&chart=COLUMN&servicefilter=0%1E29%110)\n\n- [Services](#newservices)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 228,
+            "left": 1482,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "markdown": "___\n## \uD83D\uDD0D  End User\n___\n\n\n- [Transactions](#uemapplications/performanceanalysis;uemapplicationId=APPLICATION-BD398CC2DBED6B0F;visiblepart=action)\n\n- [JavaScript Errors](#uemapplications/performanceanalysis;uemapplicationId=APPLICATION-BD398CC2DBED6B0F;visiblepart=errors;a=JavascriptErrors;errortype=JAVASCRIPT;filtr3filterErrorType=JAVASCRIPT)\n\n- [HTTP Errors](#uemapplications/performanceanalysis;uemapplicationId=APPLICATION-BD398CC2DBED6B0F;visiblepart=errors;a=JavascriptErrors;errortype=HTTP;filtr3filterErrorType=HTTP)\n\n- [All Users](#usersearchoverview;demo=;filtrfilterApplication=APPLICATION-BD398CC2DBED6B0F)\n\n- [Users with Errors](#usersearchoverview;filtrfilterApplication=APPLICATION-BD398CC2DBED6B0F;filtrfilterHasError=1)\n\n- [Service Flow](#serviceflow;sci=APPLICATION-BD398CC2DBED6B0F;mode=RESPONSE_TIME)\n\n- [Geo Breakdown](#worldmap;uemapplicationId=APPLICATION-BD398CC2DBED6B0F)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 1482,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "markdown": "___\n## \uD83D\uDD0D  Database\n\n***\n\n- [Top Queries](ui/diagnostictools/mda?mdaId=topdb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E26%110)\n\n- [Queries > 1s](ui/diagnostictools/mda?mdaId=topdb&metric=RESPONSE_TIME&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=MAX&percentile=80&chart=COLUMN&servicefilter=0%1E26%110%100%111000000%144611686018427387)\n\n- [Queries > 30s](ui/diagnostictools/mda?mdaId=topdb&metric=RESPONSE_TIME&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=MAX&percentile=80&chart=COLUMN&servicefilter=0%1E26%110%100%1130000000%144611686018427387)\n\n- [Databases](#newdatabases)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 1140,
+            "left": 1482,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "markdown": "___\n## \uD83D\uDD0D  Process\n____\n\n- [Processes](#newprocessessummary)\n\n- [CPU Analysis](ui/diagnostictools/profiling/cpu)\n\n- [Process Crashes](#processcrashesglobal)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 1444,
+            "left": 1482,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "markdown": "___\n## \uD83D\uDD0D  Host\n____\n\n- [Hosts](#newhosts)\n\n- [Network](/ui/network?)\n\n- [Smartscape](#smartscape)"
+    }, {
+        "name": "Database health",
+        "tileType": "DATABASES_OVERVIEW",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 456,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "chartVisible": true
+    }, {
+        "name": "Host health",
+        "tileType": "HOSTS",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 608,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "chartVisible": true
+    }]
+}

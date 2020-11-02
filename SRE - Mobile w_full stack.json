@@ -1,0 +1,1206 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.206.40.20201030-194632"
+    },
+    "id": "315f93f6-1f5b-4d38-9be6-abfe17bed026",
+    "dashboardMetadata": {
+        "name": "SRE - Mobile w/full stack",
+        "shared": true,
+        "owner": "michael.ferguson@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": true
+        },
+        "dashboardFilter": {
+            "timeframe": "",
+            "managementZone": {
+                "id": "7991998623307775046",
+                "name": "easyTrave Mobile - with Backend"
+            }
+        }
+    },
+    "tiles": [{
+        "name": "Problems",
+        "tileType": "OPEN_PROBLEMS",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1444,
+            "left": 0,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Host - CPU usage %",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:host.cpu.usage",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "HOST",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.host",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1140,
+            "left": 0,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Process - CPU usage %",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:tech.generic.cpu.usage",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.process_group_instance",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1444,
+            "left": 494,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Host - Memory used %",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:host.mem.usage",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "HOST",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.host",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1140,
+            "left": 494,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Process - Memory Usage",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:tech.generic.mem.workingSetSize",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.process_group_instance",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 0,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Service - Requests per second",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:service.requestCount.server",
+                    "aggregation": "NONE",
+                    "type": "BAR",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "SECOND"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:service.requestCount.total|NONE|TOTAL|BAR|SERVICE": {
+                        "lastModified": 1598152396175,
+                        "customColor": "#008cdb"
+                    },
+                    "SERVICE-3F3B7DD9C76EEF2F¦SERVICE»SERVICE-3F3B7DD9C76EEF2F»truebuiltin:service.requestCount.total|NONE|TOTAL|BAR|SERVICE": {
+                        "lastModified": 1597889309835,
+                        "customColor": "#008cdb"
+                    },
+                    "nullbuiltin:service.requestCount.server|NONE|SECOND|BAR|SERVICE": {
+                        "lastModified": 1600135243471,
+                        "customColor": "#008cdb"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 494,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Service - Latency",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:service.response.server",
+                    "aggregation": "PERCENTILE",
+                    "percentile": 50,
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "SERVICE-3F3B7DD9C76EEF2F¦SERVICE»SERVICE-3F3B7DD9C76EEF2F»truebuiltin:service.response.time|AVG|TOTAL|LINE|SERVICE": {
+                        "lastModified": 1597889290418,
+                        "customColor": "#7c38a1"
+                    },
+                    "nullbuiltin:service.response.server|PERCENTILE|TOTAL|50|LINE|SERVICE": {
+                        "lastModified": 1600135179031,
+                        "customColor": "#7c38a1"
+                    },
+                    "nullbuiltin:service.response.time|AVG|TOTAL|LINE|SERVICE": {
+                        "lastModified": 1598243815544,
+                        "customColor": "#7c38a1"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 988,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Service - Errors",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:service.errors.fourxx.count",
+                    "aggregation": "NONE",
+                    "type": "BAR",
+                    "entityType": "SERVICE",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:service.errors.fivexx.count",
+                    "aggregation": "NONE",
+                    "type": "BAR",
+                    "entityType": "SERVICE",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:service.errors.fivexx.count|NONE|TOTAL|BAR|SERVICE": {
+                        "lastModified": 1597889137069,
+                        "customColor": "#ff0000"
+                    },
+                    "nullbuiltin:service.errors.fourxx.count|NONE|TOTAL|BAR|SERVICE": {
+                        "lastModified": 1600795482939,
+                        "customColor": "#fff29a"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 494,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Database - Latency",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:service.response.time",
+                    "aggregation": "PERCENTILE",
+                    "percentile": 50,
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:service.response.time|PERCENTILE|TOTAL|50|LINE|SERVICE": {
+                        "lastModified": 1598243803538,
+                        "customColor": "#7c38a1"
+                    }
+                }
+            },
+            "filtersPerEntityType": {
+                "SERVICE": {
+                    "SERVICE_TYPE": ["3"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 0,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Database - Queries per second",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:service.requestCount.total",
+                    "aggregation": "NONE",
+                    "type": "BAR",
+                    "entityType": "SERVICE",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "SECOND"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:service.requestCount.total|NONE|SECOND|BAR|SERVICE": {
+                        "lastModified": 1598243827297,
+                        "customColor": "#008cdb"
+                    }
+                }
+            },
+            "filtersPerEntityType": {
+                "SERVICE": {
+                    "SERVICE_TYPE": ["3"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 988,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Database - Errors",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:service.errors.total.count",
+                    "aggregation": "NONE",
+                    "type": "BAR",
+                    "entityType": "SERVICE",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:service.errors.total.count|NONE|TOTAL|BAR|SERVICE": {
+                        "lastModified": 1598243859355,
+                        "customColor": "#ff0000"
+                    }
+                }
+            },
+            "filtersPerEntityType": {
+                "SERVICE": {
+                    "SERVICE_TYPE": ["3"]
+                }
+            }
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1140,
+            "left": 988,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Process - Garbage Collection Suspension Time",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:tech.jvm.memory.gc.suspensionTime",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "PROCESS_GROUP_INSTANCE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.process_group_instance",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1444,
+            "left": 988,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Host - Disk average queue length ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:host.disk.queueLength",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "HOST",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.host",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Service health",
+        "tileType": "SERVICES",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 304,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "chartVisible": true
+    }, {
+        "name": "Database health",
+        "tileType": "DATABASES_OVERVIEW",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 456,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "chartVisible": true
+    }, {
+        "name": "Host health",
+        "tileType": "HOSTS",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 608,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "chartVisible": true
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 1482,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "markdown": "___\n## \uD83D\uDD0D  Service\n***\n- [Transactions](/ui/diagnostictools/mda?metric=RESPONSE_TIME&dimension=%7BRequest:Name%7D&aggregation=AVERAGE&percentile=80&chart=LINE)\n\n- [Slow > 60s](ui/diagnostictools/mda?metric=RESPONSE_TIME&dimension=%7BRequest:Name%7D&aggregation=MAX&percentile=80&chart=LINE&servicefilter=0%1E0%1160000000%144611686018427387)\n\n- [5xx Errors](ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E26%112%1026%111%102%11500-599)\n\n- [4xx Errors](ui/diagnostictools/mda?mdaId=topweb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E26%112%1026%111%102%11400-499)\n\n- [Exceptions](ui/diagnostictools/mda?mdaId=exceptions&metric=EXCEPTION_COUNT&dimension=%7BException:Class%7D&mergeServices=true&aggregation=SUM&percentile=80&chart=COLUMN&servicefilter=0%1E29%110)\n\n- [Services](#newservices)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 1482,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "markdown": "___\n## \uD83D\uDD0D  Database\n\n***\n\n- [Top Queries](ui/diagnostictools/mda?mdaId=topdb&metric=REQUEST_COUNT&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=COUNT&percentile=80&chart=COLUMN&servicefilter=0%1E26%110)\n\n- [Queries > 1s](ui/diagnostictools/mda?mdaId=topdb&metric=RESPONSE_TIME&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=MAX&percentile=80&chart=COLUMN&servicefilter=0%1E26%110%100%111000000%144611686018427387)\n\n- [Queries > 30s](ui/diagnostictools/mda?mdaId=topdb&metric=RESPONSE_TIME&dimension=%7BRequest:Name%7D&mergeServices=false&aggregation=MAX&percentile=80&chart=COLUMN&servicefilter=0%1E26%110%100%1130000000%144611686018427387)\n\n- [Databases](#newdatabases)"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 1140,
+            "left": 1482,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "markdown": "___\n## \uD83D\uDD0D  Process\n____\n\n- [Processes](#newprocessessummary)\n\n- [CPU Analysis](ui/diagnostictools/profiling/cpu)\n\n- [Process Crashes](#processcrashesglobal)\n"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 1444,
+            "left": 1482,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "markdown": "___\n## \uD83D\uDD0D  Host\n____\n\n- [Hosts](#newhosts)\n\n- [Network](/ui/network?)\n\n- [Smartscape](#smartscape)\n"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 304,
+            "width": 152,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "##**\uD83D\uDEA6 Health**\n\n"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 912,
+            "width": 228,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## **➵  Traffic**"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1558,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "##  **❌ Errors**"
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 228,
+            "left": 494,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "End User - Latency",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:apps.other.uaDuration.osAndVersion",
+                    "aggregation": "PERCENTILE",
+                    "percentile": 50,
+                    "type": "LINE",
+                    "entityType": "MONITORED_ENTITY˟DEVICE_APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.device_application",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "SERVICE-3F3B7DD9C76EEF2F¦SERVICE»SERVICE-3F3B7DD9C76EEF2F»truebuiltin:service.response.time|AVG|TOTAL|LINE|SERVICE": {
+                        "lastModified": 1597889290418,
+                        "customColor": "#7c38a1"
+                    },
+                    "MOBILE_APPLICATION-752C288D59734C79¦DEVICE_APPLICATION»MOBILE_APPLICATION-752C288D59734C79»truebuiltin:apps.other.uaDuration.osAndVersion|PERCENTILE|TOTAL|50|LINE|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1600795182979,
+                        "customColor": "#7c38a1"
+                    },
+                    "nullbuiltin:service.response.time|AVG|TOTAL|LINE|SERVICE": {
+                        "lastModified": 1598243815544,
+                        "customColor": "#7c38a1"
+                    },
+                    "nullbuiltin:apps.other.uaDuration.osAndVersion|PERCENTILE|TOTAL|50|LINE|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1599016295822,
+                        "customColor": "#7c38a1"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 228,
+            "left": 988,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "End User - Crashes and HTTP Errors",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:apps.other.crashCount.osAndVersion",
+                    "aggregation": "NONE",
+                    "type": "BAR",
+                    "entityType": "MONITORED_ENTITY˟DEVICE_APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.device_application",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "builtin:apps.other.requestErrorCount.osAndProvider",
+                    "aggregation": "NONE",
+                    "type": "BAR",
+                    "entityType": "MONITORED_ENTITY˟DEVICE_APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.device_application",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullbuiltin:apps.other.crashCount.osAndVersion|NONE|TOTAL|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1599016449903,
+                        "customColor": "#ff0000"
+                    },
+                    "SERVICE-3F3B7DD9C76EEF2F¦SERVICE»SERVICE-3F3B7DD9C76EEF2F»truebuiltin:service.response.time|AVG|TOTAL|LINE|SERVICE": {
+                        "lastModified": 1597889290418,
+                        "customColor": "#7c38a1"
+                    },
+                    "nullbuiltin:apps.other.requestErrorCount.osAndProvider|NONE|TOTAL|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1599016458910,
+                        "customColor": "#ffa500"
+                    },
+                    "MOBILE_APPLICATION-752C288D59734C79¦DEVICE_APPLICATION»MOBILE_APPLICATION-752C288D59734C79»truebuiltin:apps.other.requestErrorCount.osAndProvider|NONE|TOTAL|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1600795510152,
+                        "customColor": "#fff29a"
+                    },
+                    "nullbuiltin:apps.other.requestCount.osAndVersion|NONE|TOTAL|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1599016276598,
+                        "customColor": "#008cdb"
+                    },
+                    "nullbuiltin:service.response.time|AVG|TOTAL|LINE|SERVICE": {
+                        "lastModified": 1598243815544,
+                        "customColor": "#7c38a1"
+                    },
+                    "MOBILE_APPLICATION-752C288D59734C79¦DEVICE_APPLICATION»MOBILE_APPLICATION-752C288D59734C79»truebuiltin:apps.other.crashCount.osAndVersion|NONE|TOTAL|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1600795285815,
+                        "customColor": "#ff0000"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1482,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Crashes",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.other.crashCount.osAndVersion",
+                    "aggregation": "NONE",
+                    "type": "BAR",
+                    "entityType": "MONITORED_ENTITY˟DEVICE_APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.device_application",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "SERVICE-3F3B7DD9C76EEF2F¦SERVICE»SERVICE-3F3B7DD9C76EEF2F»truebuiltin:service.response.time|AVG|TOTAL|LINE|SERVICE": {
+                        "lastModified": 1597889290418,
+                        "customColor": "#7c38a1"
+                    },
+                    "nullbuiltin:apps.other.crashCount.osAndVersion|NONE|TOTAL|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1599016449903,
+                        "customColor": "#ff0000"
+                    },
+                    "nullbuiltin:apps.other.requestErrorCount.osAndProvider|NONE|TOTAL|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1599016458910,
+                        "customColor": "#ffa500"
+                    },
+                    "nullbuiltin:apps.other.requestCount.osAndVersion|NONE|TOTAL|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1599016276598,
+                        "customColor": "#008cdb"
+                    },
+                    "nullbuiltin:service.response.time|AVG|TOTAL|LINE|SERVICE": {
+                        "lastModified": 1598243815544,
+                        "customColor": "#7c38a1"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1634,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "HTTP",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.other.requestErrorCount.osAndProvider",
+                    "aggregation": "NONE",
+                    "type": "BAR",
+                    "entityType": "MONITORED_ENTITY˟DEVICE_APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.device_application",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "SERVICE-3F3B7DD9C76EEF2F¦SERVICE»SERVICE-3F3B7DD9C76EEF2F»truebuiltin:service.response.time|AVG|TOTAL|LINE|SERVICE": {
+                        "lastModified": 1597889290418,
+                        "customColor": "#7c38a1"
+                    },
+                    "nullbuiltin:apps.other.crashCount.osAndVersion|NONE|TOTAL|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1599016449903,
+                        "customColor": "#ff0000"
+                    },
+                    "nullbuiltin:apps.other.requestErrorCount.osAndProvider|NONE|TOTAL|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1599016458910,
+                        "customColor": "#ffa500"
+                    },
+                    "nullbuiltin:apps.other.requestCount.osAndVersion|NONE|TOTAL|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1599016276598,
+                        "customColor": "#008cdb"
+                    },
+                    "nullbuiltin:service.response.time|AVG|TOTAL|LINE|SERVICE": {
+                        "lastModified": 1598243815544,
+                        "customColor": "#7c38a1"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 798,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Users",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.other.userCount.osAndGeo",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "MONITORED_ENTITY˟DEVICE_APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.device_application",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "SERVICE-3F3B7DD9C76EEF2F¦SERVICE»SERVICE-3F3B7DD9C76EEF2F»truebuiltin:service.response.time|AVG|TOTAL|LINE|SERVICE": {
+                        "lastModified": 1597889290418,
+                        "customColor": "#7c38a1"
+                    },
+                    "nullbuiltin:apps.other.userCount.osAndGeo|NONE|TOTAL|LINE|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1599017783063,
+                        "customColor": "#ef651f"
+                    },
+                    "nullbuiltin:apps.other.requestCount.osAndVersion|NONE|TOTAL|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1599016276598,
+                        "customColor": "#008cdb"
+                    },
+                    "nullbuiltin:service.response.time|AVG|TOTAL|LINE|SERVICE": {
+                        "lastModified": 1598243815544,
+                        "customColor": "#7c38a1"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 228,
+            "left": 1482,
+            "width": 228,
+            "height": 304
+        },
+        "tileFilter": {},
+        "markdown": "___\n## \uD83D\uDD0D  Mobile\n___\n\n\n- [Transactions](#mobileperformanceanalysis;appId=MOBILE_APPLICATION-752C288D59734C79)\n\n- [Crashes](ui/mrum/MOBILE_APPLICATION-752C288D59734C79/analyze-crashes)\n\n- [HTTP Errors](#mobileperformanceanalysis;appId=MOBILE_APPLICATION-752C288D59734C79;filtranalysis_filterHttpError=Yes)\n\n- [All Users](#usersearchoverview;filtrfilterApplication=MOBILE_APPLICATION-752C288D59734C79)\n\n- [Users with Crashes](#usersearchoverview;filtrfilterApplication=MOBILE_APPLICATION-752C288D59734C79;filtrfilterCrash=1)\n\n- [Geo Breakdown](#mobileperformanceanalysis;appId=MOBILE_APPLICATION-752C288D59734C79;a=Geolocation)\n\n- [Service Flow](#serviceflow;sci=MOBILE_APPLICATION-752C288D59734C79;mode=RESPONSE_TIME)\n"
+    }, {
+        "name": "",
+        "tileType": "APPLICATIONS",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 152,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "APPLICATION",
+            "customName": "",
+            "defaultName": "Mobile apps ",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {
+                "APPLICATION": {
+                    "APPLICATION_TYPE": ["1"]
+                }
+            }
+        },
+        "chartVisible": true
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1216,
+            "width": 152,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "##  **\uD83D\uDCC8 Latency**"
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 228,
+            "left": 0,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "End User - Transactions by User Satisfaction per second",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:apps.other.uaCount.geoAndApdex",
+                    "aggregation": "NONE",
+                    "type": "BAR",
+                    "entityType": "MONITORED_ENTITY˟DEVICE_APPLICATION",
+                    "dimensions": [{
+                        "id": "2",
+                        "name": "Apdex category",
+                        "values": ["FRUSTRATED", "SATISFIED", "TOLERATING"],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "SECOND"
+                }],
+                "resultMetadata": {
+                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.other.uaCount.geoAndApdex|NONE|SECOND|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1604119043089,
+                        "customColor": "#ffe11c"
+                    },
+                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.other.uaCount.geoAndApdex|NONE|SECOND|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1604119011366,
+                        "customColor": "#7cc33f"
+                    },
+                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.other.uaCount.geoAndApdex|NONE|SECOND|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1604119025440,
+                        "customColor": "#de192f"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1140,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "End User",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.other.uaDuration.osAndVersion",
+                    "aggregation": "PERCENTILE",
+                    "percentile": 50,
+                    "type": "LINE",
+                    "entityType": "MONITORED_ENTITY˟DEVICE_APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.device_application",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "SERVICE-3F3B7DD9C76EEF2F¦SERVICE»SERVICE-3F3B7DD9C76EEF2F»truebuiltin:service.response.time|AVG|TOTAL|LINE|SERVICE": {
+                        "lastModified": 1597889290418,
+                        "customColor": "#7c38a1"
+                    },
+                    "nullbuiltin:service.response.time|AVG|TOTAL|LINE|SERVICE": {
+                        "lastModified": 1598243815544,
+                        "customColor": "#7c38a1"
+                    },
+                    "nullbuiltin:apps.other.uaDuration.osAndVersion|PERCENTILE|TOTAL|50|LINE|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1599016295822,
+                        "customColor": "#7c38a1"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 950,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Transactions",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:apps.other.uaCount.geoAndApdex",
+                    "aggregation": "NONE",
+                    "type": "BAR",
+                    "entityType": "MONITORED_ENTITY˟DEVICE_APPLICATION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.device_application",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "SECOND"
+                }],
+                "resultMetadata": {
+                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.other.uaCount.geoAndApdex|NONE|SECOND|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1604119043089,
+                        "customColor": "#ffe11c"
+                    },
+                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.other.uaCount.geoAndApdex|NONE|SECOND|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1604119011366,
+                        "customColor": "#7cc33f"
+                    },
+                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.other.uaCount.geoAndApdex|NONE|SECOND|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                        "lastModified": 1604119025440,
+                        "customColor": "#de192f"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1292,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Service",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:service.response.server",
+                    "aggregation": "PERCENTILE",
+                    "percentile": 50,
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "SERVICE-3F3B7DD9C76EEF2F¦SERVICE»SERVICE-3F3B7DD9C76EEF2F»truebuiltin:service.response.time|AVG|TOTAL|LINE|SERVICE": {
+                        "lastModified": 1597889290418,
+                        "customColor": "#7c38a1"
+                    },
+                    "nullbuiltin:service.response.server|PERCENTILE|TOTAL|50|LINE|SERVICE": {
+                        "lastModified": 1600135179031,
+                        "customColor": "#7c38a1"
+                    },
+                    "nullbuiltin:service.response.time|AVG|TOTAL|LINE|SERVICE": {
+                        "lastModified": 1598243815544,
+                        "customColor": "#7c38a1"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }]
+}
