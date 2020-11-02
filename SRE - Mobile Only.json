@@ -5,9 +5,9 @@
     },
     "id": "9aeef61a-23af-4490-ac54-561daf74faa3",
     "dashboardMetadata": {
-        "name": "SRE - Mobile Only",
+        "name": "${overviewName}",
         "shared": true,
-        "owner": "michael.ferguson@dynatrace.com",
+        "owner": "",
         "sharingDetails": {
             "linkShared": true,
             "published": true
@@ -15,8 +15,8 @@
         "dashboardFilter": {
             "timeframe": "",
             "managementZone": {
-                "id": "1746343568936463354",
-                "name": "easyTravel Mobile - only"
+                "id": "${mz.id}",
+                "name": "${mz.name}"
             }
         }
     },
