@@ -7,7 +7,7 @@
     "dashboardMetadata": {
         "name": "AWS - Classic Load Balancers (CLB)",
         "shared": true,
-        "owner": "michael.ferguson@dynatrace.com",
+        "owner": "",
         "sharingDetails": {
             "linkShared": true,
             "published": false
