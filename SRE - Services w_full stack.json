@@ -5,9 +5,9 @@
     },
     "id": "249110dc-10aa-4f62-a6fc-53197db9f7ba",
     "dashboardMetadata": {
-        "name": "SRE - Services w/full stack",
+        "name": "${overviewName}",
         "shared": true,
-        "owner": "michael.ferguson@dynatrace.com",
+        "owner": "",
         "sharingDetails": {
             "linkShared": true,
             "published": true
@@ -15,8 +15,8 @@
         "dashboardFilter": {
             "timeframe": "-1h",
             "managementZone": {
-                "id": "8495120599934351535",
-                "name": "easyTravel Backend Services"
+                "id": "${mz.id}",
+                "name": "${mz.name}"
             }
         }
     },
