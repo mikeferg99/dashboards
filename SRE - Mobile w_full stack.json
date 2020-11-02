@@ -5,9 +5,9 @@
     },
     "id": "315f93f6-1f5b-4d38-9be6-abfe17bed026",
     "dashboardMetadata": {
-        "name": "SRE - Mobile w/full stack",
+        "name": "${overviewName}",
         "shared": true,
-        "owner": "michael.ferguson@dynatrace.com",
+        "owner": "",
         "sharingDetails": {
             "linkShared": true,
             "published": true
@@ -15,8 +15,8 @@
         "dashboardFilter": {
             "timeframe": "",
             "managementZone": {
-                "id": "7991998623307775046",
-                "name": "easyTrave Mobile - with Backend"
+                "id": "${mz.id}",
+                "name": "${mz.name}"
             }
         }
     },
@@ -687,7 +687,7 @@
                         "lastModified": 1597889290418,
                         "customColor": "#7c38a1"
                     },
-                    "MOBILE_APPLICATION-752C288D59734C79¦DEVICE_APPLICATION»MOBILE_APPLICATION-752C288D59734C79»truebuiltin:apps.other.uaDuration.osAndVersion|PERCENTILE|TOTAL|50|LINE|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                    "${app.id}¦DEVICE_APPLICATION»${app.id}»truebuiltin:apps.other.uaDuration.osAndVersion|PERCENTILE|TOTAL|50|LINE|MONITORED_ENTITY˟DEVICE_APPLICATION": {
                         "lastModified": 1600795182979,
                         "customColor": "#7c38a1"
                     },
@@ -763,7 +763,7 @@
                         "lastModified": 1599016458910,
                         "customColor": "#ffa500"
                     },
-                    "MOBILE_APPLICATION-752C288D59734C79¦DEVICE_APPLICATION»MOBILE_APPLICATION-752C288D59734C79»truebuiltin:apps.other.requestErrorCount.osAndProvider|NONE|TOTAL|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                    "${app.id}¦DEVICE_APPLICATION»${app.id}»truebuiltin:apps.other.requestErrorCount.osAndProvider|NONE|TOTAL|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
                         "lastModified": 1600795510152,
                         "customColor": "#fff29a"
                     },
@@ -775,7 +775,7 @@
                         "lastModified": 1598243815544,
                         "customColor": "#7c38a1"
                     },
-                    "MOBILE_APPLICATION-752C288D59734C79¦DEVICE_APPLICATION»MOBILE_APPLICATION-752C288D59734C79»truebuiltin:apps.other.crashCount.osAndVersion|NONE|TOTAL|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
+                    "${app.id}¦DEVICE_APPLICATION»${app.id}»truebuiltin:apps.other.crashCount.osAndVersion|NONE|TOTAL|BAR|MONITORED_ENTITY˟DEVICE_APPLICATION": {
                         "lastModified": 1600795285815,
                         "customColor": "#ff0000"
                     }
@@ -964,7 +964,7 @@
             "height": 304
         },
         "tileFilter": {},
-        "markdown": "___\n## \uD83D\uDD0D  Mobile\n___\n\n\n- [Transactions](#mobileperformanceanalysis;appId=MOBILE_APPLICATION-752C288D59734C79)\n\n- [Crashes](ui/mrum/MOBILE_APPLICATION-752C288D59734C79/analyze-crashes)\n\n- [HTTP Errors](#mobileperformanceanalysis;appId=MOBILE_APPLICATION-752C288D59734C79;filtranalysis_filterHttpError=Yes)\n\n- [All Users](#usersearchoverview;filtrfilterApplication=MOBILE_APPLICATION-752C288D59734C79)\n\n- [Users with Crashes](#usersearchoverview;filtrfilterApplication=MOBILE_APPLICATION-752C288D59734C79;filtrfilterCrash=1)\n\n- [Geo Breakdown](#mobileperformanceanalysis;appId=MOBILE_APPLICATION-752C288D59734C79;a=Geolocation)\n\n- [Service Flow](#serviceflow;sci=MOBILE_APPLICATION-752C288D59734C79;mode=RESPONSE_TIME)\n"
+        "markdown": "___\n## \uD83D\uDD0D  Mobile\n___\n\n\n- [Transactions](#mobileperformanceanalysis;appId=${app.id})\n\n- [Crashes](ui/mrum/${app.id}/analyze-crashes)\n\n- [HTTP Errors](#mobileperformanceanalysis;appId=${app.id};filtranalysis_filterHttpError=Yes)\n\n- [All Users](#usersearchoverview;filtrfilterApplication=${app.id})\n\n- [Users with Crashes](#usersearchoverview;filtrfilterApplication=${app.id};filtrfilterCrash=1)\n\n- [Geo Breakdown](#mobileperformanceanalysis;appId=${app.id};a=Geolocation)\n\n- [Service Flow](#serviceflow;sci=${app.id};mode=RESPONSE_TIME)\n"
     }, {
         "name": "",
         "tileType": "APPLICATIONS",
