@@ -964,7 +964,7 @@
             "height": 304
         },
         "tileFilter": {},
-        "markdown": "___\n## \uD83D\uDD0D  Mobile\n___\n\n\n- [Transactions](#mobileperformanceanalysis;appId=${app.id})\n\n- [Crashes](ui/mrum/${app.id}/analyze-crashes)\n\n- [HTTP Errors](#mobileperformanceanalysis;appId=${app.id};filtranalysis_filterHttpError=Yes)\n\n- [All Users](#usersearchoverview;filtrfilterApplication=${app.id})\n\n- [Users with Crashes](#usersearchoverview;filtrfilterApplication=${app.id};filtrfilterCrash=1)\n\n- [Geo Breakdown](#mobileperformanceanalysis;appId=${app.id};a=Geolocation)\n\n- [Service Flow](#serviceflow;sci=${app.id};mode=RESPONSE_TIME)\n"
+        "markdown": "___\n## \uD83D\uDD0D  Mobile\n___\n\n\n- [Transactions](#mobileperformanceanalysis;appId=${app.id})\n\n- [Crashes](ui/mrum/${app.id}/analyze-crashes)\n\n- [HTTP Errors](#mobileperformanceanalysis;appId=${app.id};filtranalysis_filterHttpError=Yes)\n\n- [All Users](#usersearchoverview;filtrfilterApplication=${app.name})\n\n- [Users with Crashes](#usersearchoverview;filtrfilterApplication=${app.name};filtrfilterCrash=1)\n\n- [Geo Breakdown](#mobileperformanceanalysis;appId=${app.id};a=Geolocation)\n\n- [Service Flow](#serviceflow;sci=${app.id};mode=RESPONSE_TIME)\n"
     }, {
         "name": "",
         "tileType": "APPLICATIONS",
